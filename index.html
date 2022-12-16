@@ -30,9 +30,12 @@
             <button class="answer_3 btn" onclick="giveAnswer()"></button>
         </div>
         <div class = 'scroll active'><span></span><h5>Scroll</h5></div>
-        <div class="rules"><h1>Правила игры</h1> <p>Приветствую тебя, о, странник! Тебе предстоит сыграть со мной в игру камень ножницы бумага, 
-            однако это непростая будет битва. Когда удача будет не на твоей стороне, я дам тебе шанс продолжить игру, не потеряв уровень твоего драгоценного HP. 
-            Здесь тебе помогут твои философские знания. Удачи, странник!</p>
+
+        <div class="rules">
+            <div class="rules__header">Правила игры</div>
+            <div class="rules__body">Приветствую тебя, о, странник! Тебе предстоит сыграть со мной в игру камень ножницы бумага,
+            однако это непростая будет битва. Когда удача будет не на твоей стороне, я дам тебе шанс продолжить игру, не потеряв уровень твоего драгоценного HP.
+            Здесь тебе помогут твои философские знания. Удачи, странник!</div>
         </div>
     </div>
     <div class = "wrapper" onscroll="hideOnScroll()">
@@ -56,12 +59,9 @@
                 <img src = "rectangle.svg" class = "paper-sign">
                 <img src = "x.svg" class = "scissors-sign">
             </div>
-            <!-- <div class = "computer-score">
-                0
-            </div>
-            <div class = "computer-score-label">
-                THEY
-            </div> -->
+            
+
+
             <div class="spinner-box">
                 <button class="play-button" title="play" onclick="beginPlay()">PLAY</button>
                 <div class = "ellipse1"></div>
@@ -81,32 +81,19 @@
             </div>
 
 
-            <!-- <div class="countdown">
-            </div>
-            <div class = "player-score">
-                0
-            </div>
-            <div class = "player-score-label">
-                YOU
-            </div> -->
-
-
-
-
-
 
             <div class = "player-choice">
                 <button class="choice-rock" title="rock"
-                onclick="getSelected(1)">
-                    ROCK
+                    onclick="getSelected(1)">
+                    КАМЕНЬ
                 </button>
                 <button class="choice-paper" title="paper"
-                        onclick="getSelected(2)">
-                    PAPER
+                    onclick="getSelected(2)">
+                    БУМАГА
                 </button>
                 <button class="choice-scissors" title="scissors"
-                        onclick="getSelected(3)">
-                    SCISSORS
+                    onclick="getSelected(3)">
+                    НОЖНИЦЫ
                 </button>
             </div>
 
