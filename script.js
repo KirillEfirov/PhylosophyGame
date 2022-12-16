@@ -85,11 +85,14 @@ answer = ""
         if (score == -4 || score == 1 || score == -2){
             console.log('You win! :' + playerSign + ' beats ' + computerSign);
 
-            document.querySelector(".computer-life-tracker").value -= 15;
+            document.querySelector(".computer-life-tracker").value -= 115;
 
             if (document.querySelector(".user-life-tracker").value <= 0 || document.querySelector(".computer-life-tracker").value <= 0) {
                 document.getElementsByClassName('end')[0].style.visibility ='visible';
-                document.getElementsByClassName('restart')[0].style.visibility ='visible';
+                //document.getElementsByClassName('restart')[0].style.visibility ='visible';
+
+                //alert("ТЫ ПРЕОДОЛЕЛ МУДРЕЦА, СТРАННИК!")
+                document.getElementsByClassName('winner')[0].style.visibility ='visible';
         
                 document.querySelector('.restart').addEventListener("click", () => {
                     document.getElementsByClassName('end')[0].style.visibility ='hidden';
@@ -391,12 +394,15 @@ answer = ""
                 hideQA();
             } else {
                 console.log("Includes in else");
-                document.querySelector(".user-life-tracker").value -= 15;
+                document.querySelector(".user-life-tracker").value -= 115;
                 hideQA();
 
                 if (document.querySelector(".user-life-tracker").value <= 0 || document.querySelector(".computer-life-tracker").value <= 0) {
                     document.getElementsByClassName('end')[0].style.visibility ='visible';
-                    document.getElementsByClassName('restart')[0].style.visibility ='visible';
+                    //document.getElementsByClassName('restart')[0].style.visibility ='visible';
+
+                    //alert("ПОВЕЗЕТ В СЛЕДУЮЩИЙ РАЗ(")
+                    document.getElementsByClassName('looser')[0].style.visibility ='visible';
             
                     document.querySelector('.restart').addEventListener("click", () => {
                         document.getElementsByClassName('end')[0].style.visibility ='hidden';
