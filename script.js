@@ -85,7 +85,7 @@ answer = ""
         if (score == -4 || score == 1 || score == -2){
             console.log('You win! :' + playerSign + ' beats ' + computerSign);
 
-            document.querySelector(".computer-life-tracker").value -= 115;
+            document.querySelector(".computer-life-tracker").value -= 30;
 
             if (document.querySelector(".user-life-tracker").value <= 0 || document.querySelector(".computer-life-tracker").value <= 0) {
                 document.getElementsByClassName('end')[0].style.visibility ='visible';
@@ -394,7 +394,7 @@ answer = ""
                 hideQA();
             } else {
                 console.log("Includes in else");
-                document.querySelector(".user-life-tracker").value -= 115;
+                document.querySelector(".user-life-tracker").value -= 30;
                 hideQA();
 
                 if (document.querySelector(".user-life-tracker").value <= 0 || document.querySelector(".computer-life-tracker").value <= 0) {
